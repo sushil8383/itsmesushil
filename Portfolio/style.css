@@ -1,0 +1,79 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+body{
+    scroll-behavior: smooth;
+    background-color: gray;
+    background-image: url(https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+.testimonial-card .card-up {
+    height: 120px;
+    overflow: hidden;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+  .testimonial-card .avatar {
+    width: 110px;
+    margin-top: -60px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    border-radius: 50%;
+  }
+
+
+    
+
+.btns{
+    background-color: green;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border:none;
+    box-shadow: 3px 2px 5px white;
+}
+.btns a{
+    text-decoration: none;
+    
+}
+
+.review{
+    background-color: rgb(36, 37, 34);
+    color: white;
+    
+}
+#project{
+    background-color: gray;
+    padding:30px 20px 30px;
+    margin-top: 30px;
+    opacity: 0.9;
+
+}
+
+.pro{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color:white;
+    
+    opacity: 0.7;
+    display: flex;
+    justify-content: space-around;
+    
+    
+
+}
+
+#service{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
