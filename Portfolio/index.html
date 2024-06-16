@@ -321,7 +321,7 @@
       <h2 class="text-center mb-4">Contact Me</h2>
       <div class="row">
           <div class="col-sm-6">
-              <form>
+              <form onsubmit="sendM(); reset(); return false;">
                   <div class="mb-3">
                       <label for="name" class="form-label">Name</label>
                       <input type="text" class="form-control" id="name" required>
@@ -366,6 +366,28 @@
 </footer>
 
 </section>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendM(){
+        Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "projectmail8383@gmail.com",
+        Password : "9C0B27EADFF798A2F3857BCF9A2E31093471",
+        To : 'projectmail8383@gmail.com',
+        From : 'projectmail8383@gmail.com',
+        Subject : "This is the subject",
+        Body : document.getElementById("name").value +"<br>"+
+         document.getElementById("email").value+"<br>"+ document.getElementById("message").value
+}).then(
+  message => alert(message)
+
+);
+
+
+  }
+
+</script>
 
 
 
